@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Projeto 3</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<meta charset="utf-8">
+	<meta name="description" content="blablabla">
+	<meta name="keywords" content="palavra,por,virgula">
+	<meta name="viewport" content="width=device-,initial-scale=1.0,maximum-scale=1.0">
+
+</head>
+<body>
+
+	<header>
+
+	<div class="container">
+
+		<div class="logo"></div>
+			<nav class="desktop-menu">
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">Serviços</a></li>
+					<li><a href="">Sobre</a></li>
+					<li><a href="">Contato</a></li>
+				</ul>
+			</nav><!-- desktop-menu -->
+
+			<nav class="mobile-menu">
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">Serviços</a></li>
+					<li><a href="">Sobre</a></li>
+					<li><a href="">Contato</a></li>
+				</ul>
+			</nav><!-- mobile-menu -->
+
+		<div class="clear"></div>
+
+		<div class="chamada1">
+			<h2>Sistemas próprios<br> para empresas autênticas.</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum tellus in rhoncus facilisis.</p>
+		</div><!-- chamada1 -->
+
+	</div><!-- container -->
+
+	</header>
+
+	<section class="sessao1">
+
+		<div class="container">
+
+			<div class="texto-sessao1">
+				<h2>Desenvolvemos sistemas únicos</h2>
+				<p>Lorem ipsum dolor sit amet.</p>
+				<ul>
+					<li>Sites</li>
+					<li>Lojas Virtuais</li>
+					<li>Sistemas</li>
+				</ul>
+
+				<div class="clear"></div>
+
+				<div class="button1-texto">Entre em contato</div>
+			</div><!-- texto-sessao1 -->
+
+			<div class="device-sessao1">
+				
+			</div><!-- device-sessao1 -->
+
+		</div><!-- container -->
+
+	</section><!-- sessao1 -->
+
+		<div class="clear"></div>
+
+	<section class="sessao2">
+		<div class="container">
+			<h2>Desenvolvido de pessoas para pessoas</h2>
+			<p>Suspendisse rutrum est quis auctor sodales. Mauris id blandit diam. Etiam interdum ante ac justo luctus tristique. Etiam lacus risus, porta vitae libero eu, imperdiet vehicula lectus. Vestibulum congue metus consectetur, facilisis nisl ac, molestie turpis. Maecenas consectetur sed diam vestibulum finibus. Nulla facilisi.</p>
+			<img src="images/dashboard.jpg">
+		</div><!-- container -->
+	</section><!-- sessao2 -->
+
+	<section class="sessao3">
+
+		<div class="sessao3-left">
+
+			<div class="wraper-left">
+				<h2>Nosso time</h2>
+				<p>Suspendisse rutrum est quis auctor sodales. Mauris id blandit diam. Etiam interdum ante ac justo luctus tristique.</p>
+			</div><!-- wraper-left -->
+
+		</div><!-- sessao3-left -->
+
+		<div class="sessao3-right">
+
+			<div class="about-right">
+
+				<div class="title-right">
+					<div class="wraper-title-right">
+						<h2>Guilherme Brasileiro</h2>
+						<p>Co-Founder / Desenvolvedor</p>
+					</div><!-- wraper-title-right -->
+					<div class="img-right"></div>
+				</div><!-- title-right -->
+
+				<div class="text-right">
+					<p>Etiam lacus risus, porta vitae libero eu, imperdiet vehicula lectus. Vestibulum congue metus consectetur, facilisis nisl ac, molestie turpis. Maecenas consectetur sed diam vestibulum finibus. Nulla facilisi.</p>
+				</div><!-- text-right -->
+
+			</div><!-- about-right -->
+
+			<div class="slider-bullet">
+				<span style="background-color: darkgrey;"></span>
+				<span></span>
+				<span></span>
+			</div><!-- slider-bullet -->
+
+		</div><!-- sessao3-right -->
+
+	<div class="clear"></div>
+
+	</section><!-- sessao3 -->
+
+	<section class="sessao4">
+		<div class="container">
+			<div class="form">
+				<h2>Entre em contato</h2>
+				<p>Vestibulum congue metus consectetur, facilisis nisl ac, molestie turpis. Maecenas consectetur sed diam vestibulum finibus. Nulla facilisi.</p>
+
+				<form>
+					<input type="text" name="nome" placeholder="Nome">
+					<input type="text" name="email" placeholder="Email">
+					<textarea name="mensagens" placeholder="Mensagem"></textarea>
+
+					<div class="clear"></div>
+
+					<div><input type="submit" name="enviar" value="Enviar"></div>
+				</form>
+			</div><!-- form -->
+
+			<div class="map-wraper">
+				<h2>Faça uma visita</h2>
+				<div class="map-wraper2">
+					<div class="map-wraper3">
+						<div id="map" class="map"></div>
+						<script>
+							function initMap() {
+							  var address = {lat: -23.617594, lng: -46.756151};
+							  var map = new google.maps.Map(document.getElementById('map'), {
+							    zoom: 18,
+							    center: address
+							  });
+
+							  var contentString ="<h4 style=color:black;>Sede da Empresa</h4><p style=color:black;>Rua Jaracatia, 165</p><p style=color:black;>Jardim Umarizal - São Paulo</p>";
+
+							  var infowindow = new google.maps.InfoWindow({
+							    content: contentString
+							  });
+
+							  var marker = new google.maps.Marker({
+							    position: address,
+							    map: map,
+							    title: 'Sede da Empresa'
+							  });
+							  marker.addListener('click', function() {
+							    infowindow.open(map, marker);
+							  });
+							}
+						</script>
+						<script async defer
+					    	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAMskP6kEQBh5TsaAOiAa8oTRSx_M8aeM&callback=initMap">
+					    </script>
+					</div><!-- map-wraper3 -->
+				</div><!-- map-wraper2 -->
+			</div><!-- map-wraper -->
+
+			<div class="clear"></div>
+
+		</div><!-- container -->
+	</section><!-- sessao4 -->
+
+	<footer>
+		<div class="container">
+			<p>Todos os direitos reservados</p>
+			<p>03guiba@gmail.com</p>
+
+			<div class="clear"></div>
+
+		</div><!-- container -->
+	</footer>
+
+</body>
+</html>

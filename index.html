@@ -10,31 +10,31 @@
 	<meta charset="utf-8">
 	<meta name="description" content="blablabla">
 	<meta name="keywords" content="palavra,por,virgula">
-	<meta name="viewport" content="width=device-,initial-scale=1.0,maximum-scale=1.0">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
 
 </head>
 <body>
 
-	<header>
+	<header id="home">
 
 	<div class="container">
 
 		<div class="logo"></div>
 			<nav class="desktop-menu">
 				<ul>
-					<li><a href="">Home</a></li>
-					<li><a href="">Serviços</a></li>
-					<li><a href="">Sobre</a></li>
-					<li><a href="">Contato</a></li>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#servicos">Serviços</a></li>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="#contato">Contato</a></li>
 				</ul>
 			</nav><!-- desktop-menu -->
 
 			<nav class="mobile-menu">
 				<ul>
 					<li><a href="">Home</a></li>
-					<li><a href="">Serviços</a></li>
-					<li><a href="">Sobre</a></li>
-					<li><a href="">Contato</a></li>
+					<li><a href="#servicos">Serviços</a></li>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="#contato">Contato</a></li>
 				</ul>
 			</nav><!-- mobile-menu -->
 
@@ -49,7 +49,7 @@
 
 	</header>
 
-	<section class="sessao1">
+	<section id="servicos" class="sessao1">
 
 		<div class="container">
 
@@ -85,7 +85,7 @@
 		</div><!-- container -->
 	</section><!-- sessao2 -->
 
-	<section class="sessao3">
+	<section id="sobre" class="sessao3">
 
 		<div class="sessao3-left">
 
@@ -97,27 +97,52 @@
 		</div><!-- sessao3-left -->
 
 		<div class="sessao3-right">
+			<div class="scrollEquipe">
+				<div class="scroll-wraper">
 
-			<div class="about-right">
+					<div class="about-right">
+						<div class="title-right">
+							<div class="wraper-title-right">
+								<h2>Guilherme Brasileiro</h2>
+								<p>Founder / Desenvolvedor</p>
+							</div><!-- wraper-title-right -->
+							<div class="img-right" style="background-image: url(images/brasileiro.png);"></div>
+						</div><!-- title-right -->
+						<div class="text-right">
+							<p>Etiam lacus risus, porta vitae libero eu, imperdiet vehicula lectus. Vestibulum congue metus consectetur, facilisis nisl ac, molestie turpis. Maecenas consectetur sed diam vestibulum finibus. Nulla facilisi.</p>
+						</div><!-- text-right -->
+					</div><!-- about-right -->
 
-				<div class="title-right">
-					<div class="wraper-title-right">
-						<h2>Guilherme Brasileiro</h2>
-						<p>Co-Founder / Desenvolvedor</p>
-					</div><!-- wraper-title-right -->
-					<div class="img-right"></div>
-				</div><!-- title-right -->
+					<div class="about-right">
+						<div class="title-right">
+							<div class="wraper-title-right">
+								<h2>Giovana Cicilio</h2>
+								<p>Founder / Diretora Financeiro</p>
+							</div><!-- wraper-title-right -->
+							<div class="img-right" style="background-image: url(images/cicilio.jpeg);"></div>
+						</div><!-- title-right -->
+						<div class="text-right">
+							<p>Etiam lacus risus, porta vitae libero eu, imperdiet vehicula lectus. Vestibulum congue metus consectetur, facilisis nisl ac, molestie turpis. Maecenas consectetur sed diam vestibulum finibus. Nulla facilisi.</p>
+						</div><!-- text-right -->
+					</div><!-- about-right -->
 
-				<div class="text-right">
-					<p>Etiam lacus risus, porta vitae libero eu, imperdiet vehicula lectus. Vestibulum congue metus consectetur, facilisis nisl ac, molestie turpis. Maecenas consectetur sed diam vestibulum finibus. Nulla facilisi.</p>
-				</div><!-- text-right -->
-
-			</div><!-- about-right -->
+					<div class="about-right">
+						<div class="title-right">
+							<div class="wraper-title-right">
+								<h2>Julie Andrade</h2>
+								<p>Founder / Marketing</p>
+							</div><!-- wraper-title-right -->
+							<div class="img-right" style="background-image: url(images/julie.jpg);"></div>
+						</div><!-- title-right -->
+						<div class="text-right">
+							<p>Etiam lacus risus, porta vitae libero eu, imperdiet vehicula lectus. Vestibulum congue metus consectetur, facilisis nisl ac, molestie turpis. Maecenas consectetur sed diam vestibulum finibus. Nulla facilisi.</p>
+						</div><!-- text-right -->
+					</div><!-- about-right -->
+				</div><!-- scroll-wraper -->
+			</div><!-- scrollEquipe -->
 
 			<div class="slider-bullet">
-				<span style="background-color: darkgrey;"></span>
-				<span></span>
-				<span></span>
+				
 			</div><!-- slider-bullet -->
 
 		</div><!-- sessao3-right -->
@@ -126,7 +151,7 @@
 
 	</section><!-- sessao3 -->
 
-	<section class="sessao4">
+	<section id="contato" class="sessao4">
 		<div class="container">
 			<div class="form">
 				<h2>Entre em contato</h2>
@@ -147,34 +172,7 @@
 				<h2>Faça uma visita</h2>
 				<div class="map-wraper2">
 					<div class="map-wraper3">
-						<div id="map" class="map"></div>
-						<script>
-							function initMap() {
-							  var address = {lat: -23.617594, lng: -46.756151};
-							  var map = new google.maps.Map(document.getElementById('map'), {
-							    zoom: 18,
-							    center: address
-							  });
-
-							  var contentString ="<h4 style=color:black;>Sede da Empresa</h4><p style=color:black;>Rua Jaracatia, 165</p><p style=color:black;>Jardim Umarizal - São Paulo</p>";
-
-							  var infowindow = new google.maps.InfoWindow({
-							    content: contentString
-							  });
-
-							  var marker = new google.maps.Marker({
-							    position: address,
-							    map: map,
-							    title: 'Sede da Empresa'
-							  });
-							  marker.addListener('click', function() {
-							    infowindow.open(map, marker);
-							  });
-							}
-						</script>
-						<script async defer
-					    	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAMskP6kEQBh5TsaAOiAa8oTRSx_M8aeM&callback=initMap">
-					    </script>
+						<div id="mapa" class="map"></div>
 					</div><!-- map-wraper3 -->
 				</div><!-- map-wraper2 -->
 			</div><!-- map-wraper -->
@@ -193,6 +191,13 @@
 
 		</div><!-- container -->
 	</footer>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAMskP6kEQBh5TsaAOiAa8oTRSx_M8aeM"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
+	<script type="text/javascript" src="js/menuScroll.js"></script>
+	<script type="text/javascript" src="js/sliderEquipe.js"></script>
 
 </body>
 </html>
